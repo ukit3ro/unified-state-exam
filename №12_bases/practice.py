@@ -44,3 +44,70 @@ while '111' in s or '222' in s:
     while '222' in s:
         s = s.replace('222', '1', 1)
 print(s)
+
+
+#задача №10
+s = '5' + 4 * '99'
+while '54' in s or '644' in s or '744' in s:
+    if '54' in s:
+        s = s.replace('54', '6', 1)
+    elif '7444' in s:
+        s = s.replace('7444', '5', 1)
+    elif '644' in s:
+        s = s.replace('644', '7', 1)
+print(s)
+
+
+#задача №11
+s = '3' * 6 + '5' *24
+while '3333' or '5555' in s:
+    if '3333' in s:
+        s = s.replace('3333', '55', 1)
+    elif '5555' in s:
+        s = s.replace('5555', '33', 1)
+print(s)
+
+
+#задача #12 (13 и 14 похожие)
+s = 1 + '4'*81
+while '14' or '244' or '3444' in s:
+    if '14' in s:
+        s = s.replace('14', '3', 1)
+    elif '244' in s:
+        s = s.replace('244', '1', 1)
+    elif '3444' in s:
+        s = s.replace('3444', '2', 1)
+print(s)
+
+
+#задача №15
+for n in range(91, 1000):
+    s = '3' * n
+    while '333' in s:
+        s = s.replace('333', '1', 1)
+        s = s.replace('111', '3', 1)
+    if s == '133':
+        print(n)
+        
+        
+#задача №16
+for n in range(81, 1000):
+    s = '2' * n
+    while '222' in s:
+        s = s.replace('222', '5', 1)
+        s = s.replace('555', '2' 1)
+    if s == '5522':
+        print(n)
+
+
+#задача №17
+s = '>' + '2' * 40 + '3' * 40 + '5' * 20
+while '>2' or '>3' or '>5' in s:
+    if '>2' in s:
+        s = s.replace('>2', '33>', 1)
+    if '>3' in s:
+        s = s.replace('>3', '3>', 1)
+    if '>5' in s:
+        s = s.replace('>5', '2>', 1)
+    
+        
