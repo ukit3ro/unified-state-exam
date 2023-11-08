@@ -142,4 +142,4 @@ def task35(start, end, cmds):
         return 1
     if start < end:
         return task35(start + 1, end, cmds + '+') + task35(start * 2, end, cmds + '*')
-    
+print(task35(1, 18, ''))
