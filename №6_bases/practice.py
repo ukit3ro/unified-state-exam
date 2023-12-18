@@ -36,21 +36,21 @@ for x in range(10):
 done() """
 
 #задание №8
-""" pen()
-tracer(0)
-k = 10
+""" pen() #опускаем перо
+tracer(0) #анимация рисования на 0
+k = 10 # коэффициент масштабирования
 right(45)
-forward(5*k)
-for i in range(7):
+forward(5*k) #перемещение вперёд умножается на масштаб
+for i in range(7): #цикл сколько раз надо повторить
     right(45)
     forward(12*k)
     right(135)
     forward(6*k)
 
-penup()
-for x in range(-10, 10):
+penup() #поднимаем перо
+for x in range(-10, 10): #рисуем координатные точки
     for y in range(-20, 10):
-        goto(x*k, y*k)
+        goto(x*k, y*k) #масштабируем для видимости
         dot(3)
 done() """
 

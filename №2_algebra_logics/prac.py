@@ -132,3 +132,4 @@ for x in range(2):
                 F1 = (w == x) and (z <= y)
                 F2 = (w <= x) <= (y == z)
                 print(x, y, z, w, int(F1), int(F2))
+
