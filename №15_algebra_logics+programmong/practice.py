@@ -50,3 +50,17 @@ print(A)
 #длина отрезка = большее - меньшее
 
 #5 прототип ДЕЛ + отрезки
+def func(x, y, A):
+    return ((9 * x + y < A) or (x + 14 * y > 49) or (x + y < 25))
+for A in range(1, 1000):
+    flag = True
+    for x in range(1, 1000):
+        for y in range(1, 1000):
+            if func(x, y, A) == False:
+                flag = False
+                break
+        if flag == False:
+            break
+    if flag == True:
+        print(A)
+        break

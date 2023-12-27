@@ -168,4 +168,35 @@ for x in range(-10,20):
 done() """
 
 
+#additional
+pendown()
+speed(100000)
 
+for i in range(2):
+    forward(17*k)
+    left(90)
+    forward(10*k)
+    left(90)
+
+penup()
+
+back(4*k)
+right(90)
+back(3*k)
+left(90)
+
+pendown()
+
+for i in range(2):
+    forward(40*k)
+    right(90)
+    forward(10*k)
+    right(90)
+penup()
+
+for x in range(-10,50):
+    for y in range(-10, 20):
+        goto(x*k, y*k)
+        dot(4)
+
+done()
