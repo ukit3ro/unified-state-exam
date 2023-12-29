@@ -140,14 +140,23 @@ for A in range(1, 1000):
         break """
 
 #13
-P = list(range(27, 130))
-Q = list(range(50, 62))
-R = list(range(38, 94))
+# P = list(range(27, 130))
+# Q = list(range(50, 62))
+# R = list(range(38, 94))
 
+# A = []
+# for x in range(1000):
+#     if (((x not in P) or (x in Q)) or ((not(x in A)) <= (not(x in R)))) == False:
+#         A.append(x)
+# print(len(A))
+#wrong
+
+#additional
+P = list(range(4, 32))
+Q = list(range(11, 64))
 A = []
 for x in range(1000):
-    if (((x not in P) or (x in Q)) or ((not(x in A)) <= (not(x in R)))) == False:
+    if ((x in A) or ((not(x in P)) <= (not(x in Q)))) == False:
         A.append(x)
 print(len(A))
-#wrong
         

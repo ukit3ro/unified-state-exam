@@ -167,7 +167,7 @@ for A in range(1, 1000):
 for A in range(1, 1000):
     flag = True
     for x in range(1, 1000):
-        if ((x & 54 != 0) and (x & 45 != 0) or (x & A == 0) or (x &) ) == False:
+        if (x & 54 != 0) and (x & 45 != 0) or (x & A == 0) or (x &) ) == False:
             flag = False
             break
     if flag == True:
