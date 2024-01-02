@@ -1,34 +1,57 @@
-import turtle
 
-def draw_petals(t, radius, angle, petals):
-    for _ in range(petals):
-        t.circle(radius, angle)
-        t.left(180 - angle)
-        t.circle(radius, angle)
-        t.left(180 - (360 / petals))
 
-def draw_flower():
-    window = turtle.Screen()
-    window.bgcolor("white")
+# print('x y z')
+# for x in range(2):
+#     for y in range(2):
+#         for z in range(2):
+#             if ((x or y) <=(z == x)) == False:
+#                 print(x, y, z)
+                
 
-    # Создаем черепаху для рисования
-    flower = turtle.Turtle()
-    flower.shape("turtle")
-    flower.speed(7)
-    flower.color("red")
+#2
+# print("x y z w")
+# for x in range(0, 2):
+#     for y in range(0, 2):
+#         for z in range(0, 2):
+#             for w in range(0, 2):
+#                 if ((x and (not y)) or (y == z) or (not w)) == False:
+#                     print(x, y, z, w)
+                    
 
-    # Рисуем цветок
-    flower.penup()
-    flower.goto(0, -200)
-    flower.pendown()
-    draw_petals(flower, 100, 60, 10)  # Рисуем лепестки
+#3
+# print("x y z w")
+# for x in range(0, 2):
+#     for y in range(0, 2):
+#         for z in range(0, 2):
+#             for w in range(0, 2):
+#                 if ((( x <= y) == (y <= z)) and (y or w)) == True:
+#                     print(x, y, z, w)
 
-    # Рисуем стебель
-    flower.color("green")
-    flower.right(90)
-    flower.forward(300)
 
-    # Закончить рисование
-    window.exitonclick()
-
-draw_flower()
+#4
+# print("x y z w")
+# for x in range(0, 2):
+#     for y in range(0, 2):
+#         for z in range(0, 2):
+#             for w in range(0, 2):
+#                 if (x and (not y) or (y == z) or (not w)) == False:
+#                     print(x, y, z, w)
+                    
+#5
+# print('x y z w F')
+# for x in range(2):
+#     for y in range(2):
+#         for z in range(2):
+#             for w in range(2):
+#                 F = ((x <= y) == (z <= (not w)) and (z or y))
+#                 print(x, y, z, w, int(F))
+                
+#6
+print('x y z w F1 F2')
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                F1 = ((w == x) and (z <=y))
+                F2 = ((w <= x) <= (y == z))
+                print(x, y, z, w, int(F1), ' ',  int(F2))
