@@ -191,7 +191,7 @@ def t39(s, e):
     elif s == e:
         return 1
     else:
-        return t39(s-1, e) + t39(s-3, e) + t39(int(in9(s//3)), e)
+        return t39(s-1, e) + t39(s-3, e) + t39(int(int(s//3)), e)
 print(t39(52, 16))
 
 
