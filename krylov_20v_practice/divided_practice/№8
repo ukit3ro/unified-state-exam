@@ -1,0 +1,96 @@
+from itertools import product
+#1
+""" numb = 1
+cnt = 0
+for i in product('ФАВОРИТ', repeat = 6):
+    s = ''.join(i)
+    if s[0] != 'О' and numb % 2 == 0 and s.count('Р') == 2:
+        cnt += 1
+    numb += 1
+print(cnt) """
+
+#2
+""" numb = 1
+cnt = 0
+for i in sorted(product('РЕПЛИКА', repeat = 6)):
+    s = ''.join(i)
+    if s[0] != 'К' and numb % 2 == 0 and s.count('И') >= 2:
+        cnt += 1
+    numb += 1
+print(cnt)
+ """
+#3
+""" numb = 1
+cnt = 0
+for i in sorted(product('ФЛАМИНГО', repeat = 5)):
+    s = ''.join(i)
+    if s[0] != 'Н' and numb % 2 != 0 and (s.count('О') == 1 or s.count('О') == 0):
+        cnt += 1
+    numb += 1
+print(cnt) """
+
+#4
+""" numb = 1
+cnt = 0
+for i in sorted(product('ИНТЕГРАЛ', repeat = 5)):
+    s = ''.join(i)
+    if s[0] != 'Т' and numb % 2 != 0 and (s.count('Н') == 2 or s.count('Н') == 1):
+        cnt += 1
+    numb += 1
+print(cnt) """
+
+#5
+""" from itertools import product
+count = 0
+for num in product('01234567', repeat=5):
+    s = ''.join(num)
+    if s[0] != '0':
+        if s.count('4') == 2:
+            if all(pair not in s for pair in '14 41 34 43 54 45 74 47'.split()):
+                count += 1
+print(count) """
+
+#6
+""" from itertools import product
+cnt = 0
+for n in product('0123', repeat = 5):
+    s = ''.join(n)
+    if (all(pair not in s for pair in '30 03'.split()) and s[0] != '0' and s.count('3') == 1):
+        cnt += 1
+print(cnt) """
+
+#7
+""" numb = 1
+for i in sorted(product('СОРНЯК', repeat = 6)):
+    s = ''.join(i)
+    if  s.count('К') <= 3 and s.count('Я') == 2:
+        print(s, numb)
+        break
+    numb += 1 """
+    
+#8
+""" numb = 1
+for i in sorted(product('ПОЛЬЗА', repeat = 6)):
+    s = ''.join(i)
+    if  s.count('А') == 1 and s.count('Ь') <= 1 and s.count('З') <= 2:
+        print(s, numb)
+        break
+    numb += 1 """
+    
+#9
+""" numb = 1
+for i in sorted(product('АТОМ', repeat = 4)):
+    s = ''.join(i)
+    if s[0] == 'О':
+        print(s, numb)
+        break
+    numb += 1 """
+
+#10
+numb = 1
+for i in sorted(product('ПРАВО', repeat = 4)):
+    s = ''.join(i)
+    if s[0] == 'П':
+        print(s, numb)
+        break
+    numb += 1
