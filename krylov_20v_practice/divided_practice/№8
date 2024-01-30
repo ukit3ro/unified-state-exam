@@ -1,4 +1,4 @@
-from itertools import product
+from itertools import product, permutations
 #1
 """ numb = 1
 cnt = 0
@@ -87,10 +87,39 @@ for i in sorted(product('АТОМ', repeat = 4)):
     numb += 1 """
 
 #10
-numb = 1
+""" numb = 1
 for i in sorted(product('ПРАВО', repeat = 4)):
     s = ''.join(i)
     if s[0] == 'П':
         print(s, numb)
         break
-    numb += 1
+    numb += 1 """
+    
+#4 10 19 34 882 1944 3125 27
+
+#13
+""" cnt = 0
+for i in product('0123', repeat = 3):
+    s = ''.join(i)
+    if s[0] != '0' and int(s[0]) >= int(s[1]) >= int(s[2]):
+        cnt += 1
+print(cnt) """
+
+#17
+""" cnt = 0
+for x in product('01234567', repeat=4):
+    q = ''.join(x)
+    if q[0] != '0':
+        if (q[0] == q[1] and q[1] != q[2] and q[1] != q[3] and q[2] != q[3]) or \
+        (q[1] == q[2] and q[2] != q[0] and q[2] != q[3] and q[0] != q[3]) or \
+        (q[2] == q[3] and q[2] != q[1] and q[2] != q[0] and q[0] != q[1]):
+            cnt += 1
+print(cnt) """
+
+#19
+""" cnt = 0
+for i in product('123456', repeat = 5):
+    s = ''.join(i)
+    if s.count('1') == 1:
+        cnt += 1
+print(cnt) """

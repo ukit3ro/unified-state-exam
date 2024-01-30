@@ -60,11 +60,9 @@ for s in f:
             notrept.append(x)
         else:
             rept.append(x)
-        
     if ((len(notrept) == 4) and (sum(rept) < sum(notrept))):
         cnt += 1
         print(rept, notrept)
-
 print(cnt)
  """
 
