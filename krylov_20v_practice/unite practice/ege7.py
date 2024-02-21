@@ -40,8 +40,12 @@ for i in sorted(product('СОРНЯК', repeat = 6)):
 """ f = open('9.txt')
 cnt = 0
 for s in f:
-    a = list(map(int, s.split())) """
-    
+    a = list(map(int, s.split()))
+    a.sort()
+    if ((max(a)**2 > (a[0] * a[1] * a[2] * a[3]) // max(a)) and\
+    (a[3] - a[2] == a[2] - a[1] == a[1] - a[0])):
+        cnt += 1
+print(cnt) """
     
 
 #12
@@ -132,8 +136,16 @@ for s in range(1, 153):
 print(task11(50, 20)*task11(20, 1)) """
 
 #25
-from fnmatch import fnmatch
+""" from fnmatch import fnmatch
 for x in range(322104, 10**9):
     if fnmatch(str(x), r'32*21?4'):
         if x % 2049 == 0:
-            print(x, x // 2049)
+            print(x, x // 2049) """
+            
+a = list(range(3542, 15877))
+needed = []
+for x in a:
+    if (x % 2 == 0 or x % 9 == 0) and x % 11 != 0 and x % 13 != 0\
+        and x % 17 != 0  and x % 23 != 0:
+            needed.append(x)
+print(len(needed), max(needed))

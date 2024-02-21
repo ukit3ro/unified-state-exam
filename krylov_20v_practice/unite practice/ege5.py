@@ -43,7 +43,7 @@ for i in range(10):
 done() """
 
 #8
-from itertools import product
+""" from itertools import product
 count = 0
 for num in product('01234567', repeat=5):
     s = ''.join(num)
@@ -51,17 +51,17 @@ for num in product('01234567', repeat=5):
         if s.count('4') == 2:
             if all(pair not in s for pair in '14 41 34 43 54 45 74 47'.split()):
                 count += 1
-print(count)
+print(count) """
 
 #9
-""" f = open('5.txt')
+f = open('5.txt')
 cnt = 0
 for s in f:
     a = list(map(int, s.split()))
     if ((max(a) * 2 < (sum(a) - max(a))) and ((a[0] + a[1] == a[2] + a[3]) or\
-        (a[0] + a[3] == a[2] + a[1]) or (a[0] + a[2] == a[1] + a[3]))):
+        (a[0] + a[3] == a[1] + a[2]) or (a[0] + a[2] == a[1] + a[3]))):
         cnt += 1
-print(cnt) """
+print(cnt)
 
 #12
 """ s = '22' + '1' * 2023 + '22'
@@ -74,13 +74,13 @@ while '211' in s or '112' in s:
 print(s) """
 
 #14
-s = 4* 25**2022 - 2 * 5**2000 + 125**1011 - 3 * 5**100 - 660
+""" s = 4* 25**2022 - 2 * 5**2000 + 125**1011 - 3 * 5**100 - 660
 cnt2 = 0
 while s > 0:
     if s % 5 == 4:
         cnt2 += 1
     s = s // 5
-print(cnt2)
+print(cnt2) """
 
 #15
 """ def aoa(n, m):

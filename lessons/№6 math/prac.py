@@ -1,0 +1,55 @@
+#2
+""" from math import *
+cnt = 0
+for x in range(-1000, 1000):
+    for y in range(-1000, 1000):
+        if x > 0 and\
+            y > tan(radians(30))*x and\
+                y < tan(radians(150)) * x + 111:
+                    cnt += 1
+print(cnt) """
+
+#3
+from math import *
+""" cnt = 0
+for x in range(-1000, 1000):
+    for y in range(-1000, 1000):
+        if x> 0 and\
+            y > tan(radians(30))*x and\
+                y < tan(radians(150)) * x + 123:
+                    cnt +=1
+print(cnt) """
+
+#4
+""" from turtle import *
+pendown()
+k = 10
+cnt = 0
+speed(0)
+
+begin_fill()
+for _ in range(2):
+    right(90)
+    forward(120*k)
+    right(90)
+    forward(14*k)
+end_fill()
+canvas = getcanvas()
+
+for x in range(-1000, 1000):
+    for y in range(-1000, 1000):
+       if canvas.find_overlapping(x * k, y * k, x * k, y * k) != ():
+           cnt += 1
+           
+print(cnt) """
+
+#5
+""" cnt = 0
+for x in range(-1000, 1000):
+    for y in range(-1000, 1000):
+        if (y < x + 12*(2**(1/2)) and y > x - 12*(2**(1/2)) and\
+            y > -x - 12*(2**(1/2)) and y < -x):
+            cnt += 1
+print(cnt) """
+
+#6

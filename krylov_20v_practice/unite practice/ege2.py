@@ -70,18 +70,14 @@ for i in sorted(product('РЕПЛИКА', repeat = 6)):
 print(cnt) """
 
 #9
-f = open('2.txt')
+""" f = open('2.txt')
 cnt = 0
 for s in f:
     a = list(map(int, s.split()))
     a1 = min(a)
-    a1 = str(a1)
-    if (len(set(a)) == 5 and s.count(a1) == 1):
-        cnt += 1
-        print(a)
-print(cnt)
-
-
+    if len(set(a)) == 5:
+        
+     """
 #12
 """ for n in range(3, 10001):
     s = '1' + '2' * 67
