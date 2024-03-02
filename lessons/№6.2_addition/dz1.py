@@ -62,7 +62,7 @@ for x in range(-10, 20):
 done() """
 
 #3
-from math import *
+""" from math import *
 cnt = 0
 for x in range(-1000, 1000):
     for y in range(-1000, 1000):
@@ -70,5 +70,17 @@ for x in range(-1000, 1000):
             y > tan(radians(30))*x and\
                 y < tan(radians(150)) * x + 101:
                     cnt +=1
-print(cnt)
+print(cnt) """
+
+#4
+left(90)
+pendown()
+tracer(0)
+k = 25
+
+right(90)
+for _ in range(3):
+    right(45)
+    forward(15*k)
+    
     
