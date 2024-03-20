@@ -123,3 +123,10 @@ for i in product('123456', repeat = 5):
     if s.count('1') == 1:
         cnt += 1
 print(cnt) """
+
+def get_divisors(n):
+    for i in range(1, int(n / 2) + 1):
+        if n % i == 0:
+            yield i
+    yield int(n)
+print(get_divisors(4))

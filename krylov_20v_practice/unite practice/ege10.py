@@ -144,4 +144,16 @@ for s in range(1, 177):
 print(t11(7,51)) """
 
 #25
-print(4**1/2)
+""" print(4**1/2) """
+
+#111
+""" def t(s, e, k5=0, k3=0, k45=0):
+    if s > e or k5 > 4 or k45 > 5: 
+        return 0
+    elif s == e and k5 <= 4 and k3 >= 2 and k45 == 5: 
+        return 1
+    else:
+        return t(s * 5, e, k5 + 1, k3, k45) + t(s * 3, e, k5, k3 + 1, k45) + t(s + 45, e, k5, k3, k45 + 1)
+print(t(1, 2970)) """
+
+""" print(round(0.5)) """

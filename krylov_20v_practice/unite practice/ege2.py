@@ -115,7 +115,7 @@ for A in range(-1000, 1000):
         break """
         
 #16
-""" import sys
+import sys
 sys.setrecursionlimit(3000)
 
 def F(n):
@@ -123,7 +123,7 @@ def F(n):
         return 3
     if n > 1:
         return 3 * n + 2 * F(n - 1)
-print(F(2024) - 4 * F(2022)) """
+print(F(2024) - 4 * F(2022))
 
 #17
 """ f = open('17var02.txt')

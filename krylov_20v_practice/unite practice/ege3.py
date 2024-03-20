@@ -104,16 +104,16 @@
 # print(max(s)) #43
 
 #16
-# import sys
-# sys.setrecursionlimit(3000)
-# def F(n):
-#     if n == 1:
-#         return 1
-#     if n == 2:
-#         return 2
-#     if n > 2:
-#         return n * (n - 1) + F(n - 1) + F(n - 2) 
-# print(F(2024) - F(2022) - 2 * F(2021) - F(2020))
+""" import sys
+sys.setrecursionlimit(3000)
+def F(n):
+     if n == 1:
+         return 1
+     if n == 2:
+        return 2
+     if n > 2:
+         return n * (n - 1) + F(n - 1) + F(n - 2) 
+print(F(2024) - F(2022) - 2 * F(2021) - F(2020)) """
             
 #17
 # f = open('17var03.txt')

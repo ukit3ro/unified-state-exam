@@ -33,13 +33,13 @@ for s in open('2.txt'):
 print(cnt) """
 
 #3
-cnt = 0
+""" cnt = 0
 for s in open('3.txt'):
     a = list(map(int, s.split()))
     povt = []
-    povt2 = []
+    povt2 = [1, 2, 3]
     nepovt = []
-    
+    [1, 1, 0, 3, 4]
     for n in a:
         if a.count(n) == 3:
             povt.append(n)
@@ -51,7 +51,7 @@ for s in open('3.txt'):
         ((sum(nepovt) / 3) <= povt[0])):
         cnt += 1
 print(cnt)
-
+ """
 #4
 """ cnt = 0
 for s in open('4.txt'):
@@ -148,16 +148,12 @@ for s in f:
 print((len(nuzh2) / len(nuzh))*100) """
 
 #11
-minimum = []
+""" minimum = []
 nuzh = []
 for s in open('9.txt'):
     s = s.replace(',', '.')
     a = list(map(float, s.split()))
     minimum.append(min(a))
 
-nuzh.append(min(minimum))
-minimum.remove(min(minimum))
 
-    
-
-min(a)
+print(set(nuzh)) """
