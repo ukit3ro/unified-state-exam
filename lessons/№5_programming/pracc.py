@@ -97,7 +97,7 @@
 
     
 #19
-for n in range(1, 1000):
+""" for n in range(1, 1000):
     n2 = bin(n)[2:]
     n2 = str(n2)
     new3 = ''
@@ -110,6 +110,6 @@ for n in range(1, 1000):
     R = int(new3, 2)
     if R > 32:
         print(R)
-        break
+        break """
             
 

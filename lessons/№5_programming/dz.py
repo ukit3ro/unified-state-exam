@@ -1,4 +1,4 @@
-
+""" 
 
 #4
 print(bin(20))
@@ -119,3 +119,61 @@ for n in range(20, 256):
     if R % 2 != 0 and '5' in str(R):
         a.append(R)
 print(len(a))
+ """
+ 
+#addition
+#1
+""" a = []
+for n in range(1, 100):
+    n2 = bin(n)[2:]
+    if len(n2) % 2 == 0:
+        n2 = n2[:len(n2)//2] + '1' + n2[len(n2)//2:]
+    else:
+        n3 = n2
+         
+    R = int(n3, 2)
+    if R <= 68:
+        print(n) """
+
+#2
+""" for n in range(1, 1000):
+    n2 = bin(n)[2:]
+    n2 = n2.replace('0', '2')
+    for j in n2:
+        if j == 1:
+           n2 = n2.replace(j, '11', 1)
+        if j == '2':
+            n2 = n2.replace(j, '10', 1)
+         
+    R = int(n2, 2)
+    if R < 777 and R % 2 == 0:
+        print(R) """
+
+#3
+""" def R(n):
+    n -= n % 8
+    n2 = bin(n)[2:]
+    n2 += str(n2.count('1') % 2)
+    n2 += str(n2.count('1') % 2)
+    
+    return int(n2, 2)
+for n in range(1, 1000):
+    if R(n) < 86:
+        print(bin(n)[2:]) """
+        
+#4
+for n in range(1, 1000):
+    n2 = bin(n)[2:]
+    if n % 5 == 0:
+        n2 += bin(int(str(n)[-3:]))[2:]
+    else:
+        n2 += bin((n % 5)*4)[2:]
+    R = int(n2, 2)
+    if R > 150:
+        print(n)
+        break
+        
+        
+        
+
+    

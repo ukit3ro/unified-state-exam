@@ -35,7 +35,7 @@ for A in range(-1000, 1000):
 
 
 #5
-def d3l(n, m):
+""" def d3l(n, m):
     return n % m == 0
 
 for A in range(1, 1000):
@@ -46,7 +46,7 @@ for A in range(1, 1000):
             break
     if flag == True:
         print(A)
-        break
+        break """
         
 #6
 """ def d3l(n, m):
@@ -143,7 +143,21 @@ for A in range(1, 1000):
         maxi.append(A)
 print(max(maxi)) """
 
+#14
 
+""" maxi = []
+def d3l(n, m):
+    return n % m == 0
+for A in range(1, 1000):
+    flag = True
+    for x in range(1, 1000):
+        if ((not(d3l(x, A))) <= (d3l(x, 26) <= (not(d3l(x, 169))))) == False:
+            flag = False
+            break
+    if flag == True:
+        maxi.append(A)
+print(max(maxi))
+ """
 
 
 #17
