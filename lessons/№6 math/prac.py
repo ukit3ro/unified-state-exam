@@ -53,3 +53,23 @@ for x in range(-1000, 1000):
 print(cnt) """
 
 #6
+""" 
+from turtle import *
+left(90)
+speed(0)
+pendown()
+k = 20
+
+
+for _ in range(10):
+    forward(2*k)
+    right(120)
+    for i in range(2):
+        right(330)
+        forward(4*k)
+penup()
+for x in range(1,20):
+    for y in range(1, 10):
+        goto(x*k, y*k)
+        dot(4)
+done() """
