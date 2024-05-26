@@ -39,7 +39,7 @@ while '11111' in s or '15' in s:
 print(s) """
 
 #13
-""" from ipaddress import *
+from ipaddress import *
 for A in range(0, 256):
     ip_net = ip_network(f'64.129.{A}.10/255.255.252.0', False)
     for ip_add in ip_net:
@@ -47,7 +47,7 @@ for A in range(0, 256):
             break
     else:
         print(A)
-        break """
+        break
         
 
 #14

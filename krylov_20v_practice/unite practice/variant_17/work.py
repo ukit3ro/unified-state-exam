@@ -121,7 +121,6 @@ print(F(446) / F(443)) """
 """ f = open('17var17.txt')
 a = [int(s) for s in f]
 summi = []
-
     
 for i in range(len(a) - 1):
     if (a[i] + a[i+1] >= 100):
